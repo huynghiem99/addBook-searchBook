@@ -13,17 +13,23 @@
 		229FDD5A2464F97B009B9856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FDD582464F97B009B9856 /* Main.storyboard */; };
 		229FDD5C2464F980009B9856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229FDD5B2464F980009B9856 /* Assets.xcassets */; };
 		229FDD5F2464F980009B9856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FDD5D2464F980009B9856 /* LaunchScreen.storyboard */; };
+		229FDD6B2464FC78009B9856 /* TableViewCellBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FDD692464FC78009B9856 /* TableViewCellBook.swift */; };
+		229FDD6C2464FC78009B9856 /* TableViewCellBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229FDD6A2464FC78009B9856 /* TableViewCellBook.xib */; };
+		229FDD6E24650450009B9856 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229FDD6D24650450009B9856 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		229FDD4F2464F97B009B9856 /* Thêm sách vào tủ,search sách.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thêm sách vào tủ,search sách.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229FDD522464F97B009B9856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229FDD542464F97B009B9856 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		229FDD562464F97B009B9856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		229FDD562464F97B009B9856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		229FDD592464F97B009B9856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229FDD5B2464F980009B9856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229FDD5E2464F980009B9856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229FDD602464F980009B9856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229FDD692464FC78009B9856 /* TableViewCellBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellBook.swift; sourceTree = "<group>"; };
+		229FDD6A2464FC78009B9856 /* TableViewCellBook.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellBook.xib; sourceTree = "<group>"; };
+		229FDD6D24650450009B9856 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		229FDD512464F97B009B9856 /* Thêm sách vào tủ,search sách */ = {
 			isa = PBXGroup;
 			children = (
+				229FDD682464FC38009B9856 /* Controller */,
+				229FDD672464FC33009B9856 /* View */,
+				229FDD662464FC25009B9856 /* Model */,
 				229FDD522464F97B009B9856 /* AppDelegate.swift */,
 				229FDD542464F97B009B9856 /* SceneDelegate.swift */,
-				229FDD562464F97B009B9856 /* ViewController.swift */,
 				229FDD582464F97B009B9856 /* Main.storyboard */,
 				229FDD5B2464F980009B9856 /* Assets.xcassets */,
 				229FDD5D2464F980009B9856 /* LaunchScreen.storyboard */,
 				229FDD602464F980009B9856 /* Info.plist */,
 			);
 			path = "Thêm sách vào tủ,search sách";
+			sourceTree = "<group>";
+		};
+		229FDD662464FC25009B9856 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				229FDD6D24650450009B9856 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		229FDD672464FC33009B9856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				229FDD692464FC78009B9856 /* TableViewCellBook.swift */,
+				229FDD6A2464FC78009B9856 /* TableViewCellBook.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		229FDD682464FC38009B9856 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				229FDD562464F97B009B9856 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229FDD6C2464FC78009B9856 /* TableViewCellBook.xib in Resources */,
 				229FDD5F2464F980009B9856 /* LaunchScreen.storyboard in Resources */,
 				229FDD5C2464F980009B9856 /* Assets.xcassets in Resources */,
 				229FDD5A2464F97B009B9856 /* Main.storyboard in Resources */,
@@ -138,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229FDD6B2464FC78009B9856 /* TableViewCellBook.swift in Sources */,
 				229FDD572464F97B009B9856 /* ViewController.swift in Sources */,
 				229FDD532464F97B009B9856 /* AppDelegate.swift in Sources */,
+				229FDD6E24650450009B9856 /* Book.swift in Sources */,
 				229FDD552464F97B009B9856 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

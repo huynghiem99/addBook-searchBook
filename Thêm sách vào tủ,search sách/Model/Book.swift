@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class Book {
+    var name:String = ""
+    var author:String = ""
+    var img:String = ""
+    var numReview:String = ""
+    var numShare:String = ""
+    var numCmt:String = ""
+    
+    init(name:String,author:String,img:String,numReview:String,numShare:String,numCmt:String) {
+        self.name = name
+        self.author = author
+        self.img = img
+        self.numReview = numReview
+        self.numShare = numShare
+        self.numCmt = numCmt
+    }
+}

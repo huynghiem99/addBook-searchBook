@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QxQ-xB-R0W">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Thêm vào tủ sách-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_m_sa_ch_va_o_tu__search_sa_ch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jv-Xe-JDy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn có những cuốn sách nào? Hãy thêm ít nhất 5 cuốn vào tủ sách của bạn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-d3-apu">
+                                        <rect key="frame" x="8" y="25" width="398" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Aob-bx-iFc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-9e-4jI">
+                                        <rect key="frame" x="187.5" y="96" width="39" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Md9-W9-wP5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Oou-d3-apu" firstAttribute="leading" secondItem="0jv-Xe-JDy" secondAttribute="leading" constant="8" id="44r-p4-QiA"/>
+                                    <constraint firstItem="gCj-9e-4jI" firstAttribute="centerX" secondItem="0jv-Xe-JDy" secondAttribute="centerX" id="FHE-fp-If7"/>
+                                    <constraint firstItem="gCj-9e-4jI" firstAttribute="top" secondItem="Oou-d3-apu" secondAttribute="bottom" constant="1" id="bB6-7r-xf1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oou-d3-apu" secondAttribute="trailing" constant="8" id="uHm-qg-dPf"/>
+                                    <constraint firstItem="Oou-d3-apu" firstAttribute="top" secondItem="0jv-Xe-JDy" secondAttribute="top" constant="25" id="yFf-T1-NG3"/>
+                                    <constraint firstAttribute="height" constant="140" id="yXW-QC-fpu"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N0S-wK-4oI">
+                                <rect key="frame" x="0.0" y="228" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YeY-v7-9uU"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bRH-kS-dQS">
+                                <rect key="frame" x="0.0" y="272" width="414" height="590"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0jv-Xe-JDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Eb-UH-ud6"/>
+                            <constraint firstItem="0jv-Xe-JDy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8EV-Hp-Afs"/>
+                            <constraint firstItem="bRH-kS-dQS" firstAttribute="top" secondItem="N0S-wK-4oI" secondAttribute="bottom" id="H2H-vQ-gRE"/>
+                            <constraint firstItem="bRH-kS-dQS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HkE-1l-iju"/>
+                            <constraint firstItem="N0S-wK-4oI" firstAttribute="top" secondItem="0jv-Xe-JDy" secondAttribute="bottom" id="IAk-H0-MIH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bRH-kS-dQS" secondAttribute="bottom" id="K3W-9T-Muz"/>
+                            <constraint firstItem="N0S-wK-4oI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y2c-sO-T3j"/>
+                            <constraint firstItem="bRH-kS-dQS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="am0-HQ-lXu"/>
+                            <constraint firstItem="0jv-Xe-JDy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dTa-ul-XmT"/>
+                            <constraint firstItem="N0S-wK-4oI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g80-Jt-61d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Thêm vào tủ sách" id="JCh-m5-UWp"/>
+                    <connections>
+                        <outlet property="lblQuestion" destination="Oou-d3-apu" id="c0e-0D-rfs"/>
+                        <outlet property="lblReportNumBook" destination="gCj-9e-4jI" id="89d-bN-3IS"/>
+                        <outlet property="searchBook" destination="N0S-wK-4oI" id="qYR-yP-uOU"/>
+                        <outlet property="tbvFavouriteBook" destination="bRH-kS-dQS" id="GHO-Bn-bJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DtM-2Z-O0B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QxQ-xB-R0W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ys6-HV-a3a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Edp-jx-m6L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oyb-1V-cAs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
 </document>
